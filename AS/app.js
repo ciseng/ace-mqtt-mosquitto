@@ -7,8 +7,8 @@
  */
 
 /******* Include **************/
-
-var config = require('config.json')('./as_config.json');
+var config_location = process.argv.length > 2 ? process.argv[process.argv.length - 1] : './as_config.json';
+var config = require('config.json')(config_location);
 
 var express = require('express');
 var path = require('path');

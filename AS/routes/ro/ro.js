@@ -3,8 +3,6 @@
  * @type {*|exports|module.exports}
  */
 
-var config = require('config.json')('./as_config.json');
-
 var User = require('../../models/user');
 
 var Tokens = require('../../models/tokens');

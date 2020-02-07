@@ -5,7 +5,8 @@
 //According to RFC, the client_secret_expires_at is
 //the number of seconds from 1970-01-01T00:00:00Z
 
-var config = require('config.json')('./as_config.json');
+var config_location = process.argv.length > 2 ? process.argv[process.argv.length - 1] : './as_config.json';
+var config = require('config.json')(config_location);
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
