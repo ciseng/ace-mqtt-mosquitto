@@ -1,6 +1,4 @@
 //Passport strategies to support different types of authentication mechanisms
-var config = require('config.json')('./as_config.json');
-
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var BasicStrategy = require('passport-http').BasicStrategy;

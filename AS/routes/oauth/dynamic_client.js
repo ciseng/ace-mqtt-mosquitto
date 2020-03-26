@@ -1,5 +1,3 @@
-var config = require('config.json')('./as_config.json');
-
 var Client = require('../../models/client');
 var Random = require('../../common/random');
 

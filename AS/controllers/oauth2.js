@@ -1,6 +1,6 @@
 //Handles OAuth2.0 flow using oauth2orize and passport
-
-var config = require('config.json')('./as_config.json');
+var config_location = process.argv.length > 2 ? process.argv[process.argv.length - 1] : './as_config.json';
+var config = require('config.json')(config_location);
 
 var oauth2orize = require('oauth2orize');
 var authController = require('./auth');
